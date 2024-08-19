@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui;
+  background-color: #efefef;
+}
+
+header {
+  padding: 2rem 10%;
+  border-bottom: 2px solid #29213f;
+}
+
+header ul {
+  list-style: none;
+}
+
+header a {
+  color: inherit;
+  text-decoration: none;
+  font-style: normal;
+}
+
+header a:hover {
+    color: hotpink;
+}
+
+header h1 {
+    text-align: center;
+    color: rebeccapurple;
+    text-decoration: underline;
+}
+
+header h2 {
+    color: blueviolet;
+}
+
+header img {
+    display: block;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+    margin:1rem auto;
+}
+
+main {
+    margin: 2rem 4rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+p {
+    max-width: 80ch;
+}
+
+section li {
+    font-size: .8rem;
+    letter-spacing: 0.5px;
+    margin: .5rem;
+}
+nav {
+  padding: 1.5rem 2rem;
+  background-color: #222831;
+  color: #fff;
+ }
+ .checkbtn {
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+ }
+ .nav-mobile {
+  display: none;
+ }
+ #check:checked ~ .nav-mobile {
+  display: block;
+ }
+ .nav-mobile {
+  position: absolute;
+  top: 4.5rem;
+  left: 0;
+  background: #222831;
+  z-index: 1;
+  width: 200px;
+ }
+ .nav-mobile a {
+  color: #fff;
+  padding: 1rem 1.5rem;
+  display: block;
+ }
+ @media only screen and (max-width: 992px) {
+  .checkbtn {
+  display: block;
+  font-size: 5rem;
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  }
+ .nav-mobile {
+  top: 160px;
+  width: 100%;
+  }
+ .nav-mobile a {
+  font-size: 2rem;
+  padding: 2rem 3rem;
+  }
+ }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* CSS rules for extra small screens */
+}
+ 
+/* Small devices (portrait tablets and large phones, 600px to 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  /* CSS rules for small screens */
+}
+ 
+/* Medium devices (landscape tablets, 768px to 992px) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  /* CSS rules for medium screens */
+}
+ 
+/* Large devices (laptops/desktops, 992px to 1200px) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  /* CSS rules for large screens */
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1201px) {
+  /* CSS rules for extra large screens */
+}
